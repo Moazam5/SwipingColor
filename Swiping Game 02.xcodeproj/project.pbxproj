@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		251161F4220DFD6D004CCE45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251161F3220DFD6D004CCE45 /* AppDelegate.swift */; };
 		251161F6220DFD6D004CCE45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251161F5220DFD6D004CCE45 /* ViewController.swift */; };
-		251161F9220DFD6D004CCE45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251161F7220DFD6D004CCE45 /* Main.storyboard */; };
 		251161FC220DFD6D004CCE45 /* Swiping_Game_02.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 251161FA220DFD6D004CCE45 /* Swiping_Game_02.xcdatamodeld */; };
 		251161FE220DFD6F004CCE45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 251161FD220DFD6F004CCE45 /* Assets.xcassets */; };
 		25116201220DFD6F004CCE45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251161FF220DFD6F004CCE45 /* LaunchScreen.storyboard */; };
+		2544330B22235FE300742B37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2544330A22235FE300742B37 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		251161F0220DFD6D004CCE45 /* Swiping Game 02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swiping Game 02.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		251161F3220DFD6D004CCE45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		251161F5220DFD6D004CCE45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		251161F8220DFD6D004CCE45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		251161FB220DFD6D004CCE45 /* Swiping_Game_02.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Swiping_Game_02.xcdatamodel; sourceTree = "<group>"; };
 		251161FD220DFD6F004CCE45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25116200220DFD6F004CCE45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25116202220DFD6F004CCE45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2544330A22235FE300742B37 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				251161F3220DFD6D004CCE45 /* AppDelegate.swift */,
+				2544330A22235FE300742B37 /* Main.storyboard */,
 				251161F5220DFD6D004CCE45 /* ViewController.swift */,
-				251161F7220DFD6D004CCE45 /* Main.storyboard */,
 				251161FD220DFD6F004CCE45 /* Assets.xcassets */,
 				251161FF220DFD6F004CCE45 /* LaunchScreen.storyboard */,
 				25116202220DFD6F004CCE45 /* Info.plist */,
@@ -127,7 +127,7 @@
 			files = (
 				25116201220DFD6F004CCE45 /* LaunchScreen.storyboard in Resources */,
 				251161FE220DFD6F004CCE45 /* Assets.xcassets in Resources */,
-				251161F9220DFD6D004CCE45 /* Main.storyboard in Resources */,
+				2544330B22235FE300742B37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		251161F7220DFD6D004CCE45 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				251161F8220DFD6D004CCE45 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		251161FF220DFD6F004CCE45 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,7 +285,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.moazam.Swiping-Game-02";
+				PRODUCT_BUNDLE_IDENTIFIER = com.moazam.camera01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,7 +303,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.moazam.Swiping-Game-02";
+				PRODUCT_BUNDLE_IDENTIFIER = com.moazam.camera01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
