@@ -52,8 +52,8 @@
                     </view>
                     <connections>
                         <outlet property="bottomBoundry" destination="NfD-0m-g0P" id="sz8-vv-Hhp"/>
-                        <outlet property="objectLabel" destination="cdr-UE-zGF" id="INd-qn-eQN"/>
-                        <outlet property="stringView" destination="aqq-s0-Zlo" id="5cX-xU-o2v"/>
+                        <outlet property="stringObjectLabel" destination="cdr-UE-zGF" id="SET-dp-Xq6"/>
+                        <outlet property="stringObjectView" destination="aqq-s0-Zlo" id="5cX-xU-o2v"/>
                         <outlet property="topBoundry" destination="hCa-nY-3aB" id="Opb-I6-fku"/>
                     </connections>
                 </viewController>

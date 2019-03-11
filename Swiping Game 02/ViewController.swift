@@ -10,20 +10,26 @@ import UIKit
 
 class ViewController: UIViewController
 {
-    //MARK:- Variables
-    var initialCenter = CGPoint()  // The initial center point of the view.
-    let colorString = ["Green", "Blue"]
+  
     
     //MARK:- Connections
     @IBOutlet weak var topBoundry: UIView!
     @IBOutlet weak var bottomBoundry: UIView!
-    @IBOutlet weak var stringView: UIView!
-    @IBOutlet weak var objectLabel: UILabel!
+    @IBOutlet weak var stringObjectView: UIView!
+    
+    @IBOutlet weak var stringObjectLabel: UILabel!
+    
+    //MARK:- Variables
+    
+    var initialCenter = CGPoint()  // The initial center point of the view.
+    let colorString = ["Green", "Blue"]   //Colors we will be using
+    
+    
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        labelRandomString(objectLabel, colorString)
+        labelRandomString(stringObjectLabel, colorString)
         
     }
 
@@ -54,7 +60,7 @@ class ViewController: UIViewController
                 || objectView.frame.maxY >= bottomBoundry.frame.minY + 10
             {
                 randomPosition(objectView)
-                labelRandomString(objectLabel, colorString)
+                labelRandomString(stringObjectLabel, colorString)
                 objectView.removeFromSuperview()
             }
             
