@@ -86,6 +86,7 @@ class ViewController: UIViewController
     func  labelRandomString(_ givenLabel : UILabel,_ givenArray: [String])
    {
     givenLabel.text = givenArray.randomElement()!
+    givenLabel.textColor = UIColor.blue
     }
   
 }
