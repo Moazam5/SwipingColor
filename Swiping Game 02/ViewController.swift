@@ -22,7 +22,7 @@ class ViewController: UIViewController
     //MARK:- Variables
     
     var initialCenter = CGPoint()  // The initial center point of the view.
-    let colorString = ["Green", "Blue"]   //Colors we will be using
+    let colorString = ["Green", "Blue", "Red","Yellow"]   //Colors we will be using
     
     
     
@@ -86,7 +86,7 @@ class ViewController: UIViewController
     func  labelRandomString(_ givenLabel : UILabel,_ givenArray: [String])
    {
     givenLabel.text = givenArray.randomElement()!
-    givenLabel.textColor = UIColor.blue
+   // givenLabel.textColor = UIColor.blue
     }
   
 }
