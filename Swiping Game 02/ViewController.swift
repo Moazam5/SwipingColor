@@ -16,6 +16,8 @@ class ViewController: UIViewController
     @IBOutlet weak var topBoundry: UIView!
     @IBOutlet weak var bottomBoundry: UIView!
     @IBOutlet weak var stringObjectView: UIView!
+    @IBOutlet var leftBoundry: UIView!
+    @IBOutlet var rightBoundry: UIView!
     
     @IBOutlet weak var stringObjectLabel: UILabel!
     
@@ -23,7 +25,7 @@ class ViewController: UIViewController
     
     var initialCenter = CGPoint()  // The initial center point of the view.
     let colorString = ["Green", "Blue", "Red","Yellow"]   //Colors we will be using
-    
+    var rightColor = false
     
     
     override func viewDidLoad()
@@ -57,11 +59,17 @@ class ViewController: UIViewController
             objectView.center = newCenter
             
             if objectView.frame.minY  <= topBoundry.frame.maxY - 13
-                || objectView.frame.maxY >= bottomBoundry.frame.minY + 10
+                || objectView.frame.maxY >= bottomBoundry.frame.minY + 10 || objectView.frame.minX <= leftBoundry.frame.maxX - 10 || objectView.frame.maxX >= rightBoundry.frame.minX + 10
             {
-                randomPosition(objectView)
-                labelRandomString(stringObjectLabel, colorString)
-                objectView.removeFromSuperview()
+                checkColor(imageView: sender.view!)
+                if rightColor
+                {
+                    randomPosition(objectView)
+                    labelRandomString(stringObjectLabel, colorString)
+                    objectView.removeFromSuperview()
+
+                }
+                
             }
             
             if !objectView.isDescendant(of: view)
@@ -80,14 +88,75 @@ class ViewController: UIViewController
 
     func randomPosition(_ imageView : UIView)
     {
-        imageView.center = CGPoint(x: Double.random(in: 120...200), y: Double.random(in: 200...650))
+        imageView.center = CGPoint(x: Double.random(in: 150...230), y: Double.random(in: 200...650))
     }
     
     func  labelRandomString(_ givenLabel : UILabel,_ givenArray: [String])
    {
     givenLabel.text = givenArray.randomElement()!
    // givenLabel.textColor = UIColor.blue
+    
+    if givenLabel.text == "Red"
+    {
+        stringObjectLabel.tag = 3
+    }
+    else if givenLabel.text == "Blue"
+    {
+        stringObjectLabel.tag = 1
+
+    }
+    else if  givenLabel.text == "Green"
+    {
+        stringObjectLabel.tag = 2
+
+    }
+        else if givenLabel.text == "Yellow"
+    {
+        stringObjectLabel.tag = 4
+
     }
   
+    }
+  
+    func checkColor(imageView : UIView)
+    {
+        rightColor = false
+        
+        if (imageView.frame.minY  <= topBoundry.frame.maxY - 13)
+        {
+            
+            if stringObjectLabel.tag == 1
+            {
+                rightColor = true
+            }
+        }
+        else if (imageView.frame.maxY >= bottomBoundry.frame.minY + 10)
+        {
+            if stringObjectLabel.tag == 2
+            {
+                
+                rightColor = true
+            }        }
+        else if (imageView.frame.minX <= leftBoundry.frame.maxX - 10)
+        {
+            if stringObjectLabel.tag == 3
+            {
+                
+                rightColor = true
+            }
+            
+        }
+        else if (imageView.frame.maxX >= rightBoundry.frame.minX + 10)
+        {
+            if stringObjectLabel.tag == 4
+            {
+                
+                rightColor = true
+            }
+            
+        }
+        
+
+    }
 }
 

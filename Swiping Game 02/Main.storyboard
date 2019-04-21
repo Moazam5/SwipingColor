@@ -18,21 +18,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hCa-nY-3aB">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
+                            <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hCa-nY-3aB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aqq-s0-Zlo">
-                                <rect key="frame" x="67" y="274" width="240" height="80"/>
+                                <rect key="frame" x="67" y="274" width="180" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Red" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdr-UE-zGF">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="80"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                 </subviews>
                                 <gestureRecognizers/>
@@ -40,18 +41,18 @@
                                     <outletCollection property="gestureRecognizers" destination="78R-m8-ei8" appends="YES" id="dfc-4H-V2d"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NfD-0m-g0P">
-                                <rect key="frame" x="0.0" y="810" width="414" height="86"/>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NfD-0m-g0P">
+                                <rect key="frame" x="0.0" y="830" width="414" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.32549019607843138" green="0.83137254901960778" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fjN-MW-cbg">
-                                <rect key="frame" x="0.0" y="85" width="50" height="725"/>
+                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fjN-MW-cbg">
+                                <rect key="frame" x="0.0" y="65" width="30" height="765"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="POc-1a-mFx">
-                                <rect key="frame" x="364" y="85" width="50" height="725"/>
+                            <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="POc-1a-mFx">
+                                <rect key="frame" x="384" y="65" width="30" height="765"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -62,6 +63,8 @@
                     </view>
                     <connections>
                         <outlet property="bottomBoundry" destination="NfD-0m-g0P" id="sz8-vv-Hhp"/>
+                        <outlet property="leftBoundry" destination="fjN-MW-cbg" id="71a-f8-wOT"/>
+                        <outlet property="rightBoundry" destination="POc-1a-mFx" id="bI2-w6-3R8"/>
                         <outlet property="stringObjectLabel" destination="cdr-UE-zGF" id="SET-dp-Xq6"/>
                         <outlet property="stringObjectView" destination="aqq-s0-Zlo" id="5cX-xU-o2v"/>
                         <outlet property="topBoundry" destination="hCa-nY-3aB" id="Opb-I6-fku"/>
