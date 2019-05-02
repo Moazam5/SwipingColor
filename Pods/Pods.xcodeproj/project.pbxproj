@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16CE6D2F57991F3B562AD6E999561AD2 /* PixelBufferConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021F83B385BE493F5BDB7A3B4A3172F3 /* PixelBufferConsumer.swift */; };
+		1C24D0C87E2E38C9B616449C84EF4084 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27C76DF4E789C001C60A0782BA05B8 /* Filter.swift */; };
+		2721D16B8279CBBEF213DC925F3426BD /* RecordableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBCE06BA9A7AC78EBAE741214D5B6D /* RecordableView.swift */; };
+		27EEE493245FECB4CE98AC2D3C381F35 /* AudioSampleBufferConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D799AC9458D562F33A6157ABE66D1DA0 /* AudioSampleBufferConsumer.swift */; };
+		33FB4FD92138F0B09B077955BD310DAE /* PixelBufferProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDD62F9C579EB26E73D712AB00FF906 /* PixelBufferProducer.swift */; };
+		393D7FF28E28EA8957C978B8420F2877 /* GeometryFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427B5BC45803BCA6632FB77308DCC9FA /* GeometryFilter.swift */; };
+		3AFC6575A26CB6BA2025D6774C8BCDD6 /* Pods-Swiping Game 02-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0D164F456CD92CABAE7D424A680C6 /* Pods-Swiping Game 02-dummy.m */; };
+		4D5D1F276784690DA5FB034DE0506CA9 /* SCNRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672AE1EED2D71A70AEB171F633CFB384 /* SCNRecorder.swift */; };
+		53C6FA87A43F10528BBEDC5325F1DF1B /* SCNRecorder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5DF71973579729896E17096D816290 /* SCNRecorder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		565D2CB45DAE0079B0B295C1F90B02FF /* SCNRecorder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BDADB4824D958A9DFE33269F3064FF /* SCNRecorder-dummy.m */; };
+		5BD390F81C668927B21CC4A0C2C0CBEA /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753BC7DF014A2A20BD844A6746CD5346 /* Weak.swift */; };
+		5C70CCAF5C57948AE1D2D489D5A8DE5E /* InternalRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9B379FFF81D057501D88AB181B864A /* InternalRecorder.swift */; };
+		5DF5B307E13F499E23B0A2A4C358FF0C /* MTLPixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84AD9FED13BA6CC63DEE596448F26D /* MTLPixelFormat.swift */; };
+		6906952B83C3DBF11ACF8F7F2A530A03 /* VideoInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4CFE84FCC7823BE7F4E52CFC9396AC /* VideoInfoProvider.swift */; };
+		6A0D2EFB2EC74B8E6493168CFF725BA4 /* ImageRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4AB701D7BBD33A051BF49110E2F607 /* ImageRecorder.swift */; };
+		6C6ED68F372ADE7B95B6A383D6434018 /* Pods-Swiping Game 02-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3828BEC154393B1A4BC62B310366DF9 /* Pods-Swiping Game 02-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77B6F961ED3F1BD22D1D1AB7269A2180 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7F98D1448C237EB6FF96223000C01 /* API.swift */; };
+		7D9A4099E60EBEE22FABF76893DD7360 /* CIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F493B37D7CA54E5F1073C088322275D /* CIImage.swift */; };
+		8C9760B3F8C7E5B868712F1AA20E8A74 /* VideoRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B451CE41491261BDF8DBD0ECDD643EA0 /* VideoRecorder.swift */; };
+		9001D4CA61AAF5E1E2062FCAF5B97A69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5962C1CAF84C23382BBA003ED9F06F1 /* Foundation.framework */; };
+		94872B5DD92A4D94D4720466BFABCB4A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB6B6959399529DA2A62FCA4A377A3F /* AVFoundation.framework */; };
+		965FFBB237CC808A48B1CD54EF66527D /* ARSCNRecordableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD722E896D0AAA67E011056813B3BABA /* ARSCNRecordableView.swift */; };
+		98D55102454D9CEAB480BFFFB9D73E77 /* EAGLPixelBufferProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311DF659EFA9C2C39F78EFBB826FEC0B /* EAGLPixelBufferProducer.swift */; };
+		9AD74FDAA6951B716AF687604A679BA8 /* VideoRecorder.Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70658347E3FC53840C1B10A0AA5AA9F3 /* VideoRecorder.Recording.swift */; };
+		9CE8F2E32D348BED7A01F7F70808DABD /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E0AF6DD3673E17FD7AF7F4919E98C8 /* SceneKit.framework */; };
+		9EC5276A980145E3634F91C1485CE28D /* SCNRecordableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771A796D5572366CF8CE24FD66B03106 /* SCNRecordableView.swift */; };
+		A6534D2D9B24F5CBEDD1673DDA2BACEB /* WatermarkFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5784C66742D73B71405F41D8D20FA8F0 /* WatermarkFilter.swift */; };
+		ADAC449BD930A5B1D3922F4F576BE7DA /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED873DE2BE4048EBDD443AA596FBE51 /* Recorder.swift */; };
+		B5C59638C3E30438CF0F137E23BFCE6E /* CAMetalRecordableLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761AB6992456B8301B0DA59C200BA0F7 /* CAMetalRecordableLayer.swift */; };
+		BA32A3B00AA5F5E927A664AD85C02956 /* CompositeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972EB8CA601AD71982EF6D4DB93AA269 /* CompositeFilter.swift */; };
+		BD337A36BF3CA9FEFE83063572BBAB7E /* VideoRecorder.State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B175FBF0C535F70B107B7251D41ABB /* VideoRecorder.State.swift */; };
+		BE816D290C19DC8655962C539DCAB978 /* MetalPixelBufferProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65FEA51A429DA3DA2BE7A22281ED666 /* MetalPixelBufferProducer.swift */; };
+		D0312C6D936564D81A80F8353A6B1083 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5962C1CAF84C23382BBA003ED9F06F1 /* Foundation.framework */; };
+		E0631D728111C5324C09BE1FF22CD136 /* SwappingFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7983B83EF8C8D28ECAF193E50459913 /* SwappingFilter.swift */; };
+		E4E2149445C4E50B22891F4951DE5D0A /* VideoRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535D04C5303981BA64909CAF602C1EA0 /* VideoRecording.swift */; };
+		E58D020762A57163F0232DDA57EFB17E /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC3F8380F263529D58D70B6D6B8EF64 /* ARKit.framework */; };
+		EE51132820C6853BF910287775D8D4E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC07A2E9AFCD0A4DC0DF6A85A25B4D43 /* UIKit.framework */; };
+		F52B3459008C74A6C90D12E9D2AB50F9 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCB9013EB20AEDF6A1E1C00741EDA82 /* AVKit.framework */; };
+		F755D400E6B968AF2A9459EB05F57193 /* AVCaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095EC26F020184F2639A3B177A02A87D /* AVCaptureSession.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E94A259EE107F44FA4417DA02E600090 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0243262870B22AF768FEA856ACB03F24;
+			remoteInfo = SCNRecorder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		021F83B385BE493F5BDB7A3B4A3172F3 /* PixelBufferConsumer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PixelBufferConsumer.swift; path = Source/Consumers/PixelBufferConsumer.swift; sourceTree = "<group>"; };
+		02B175FBF0C535F70B107B7251D41ABB /* VideoRecorder.State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoRecorder.State.swift; path = Source/Consumers/Video/VideoRecorder.State.swift; sourceTree = "<group>"; };
+		035AD2B45879F89E6DC2B740786A858F /* SCNRecorder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCNRecorder-prefix.pch"; sourceTree = "<group>"; };
+		095EC26F020184F2639A3B177A02A87D /* AVCaptureSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AVCaptureSession.swift; path = Source/Extensions/AVCaptureSession.swift; sourceTree = "<group>"; };
+		0CDD62F9C579EB26E73D712AB00FF906 /* PixelBufferProducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PixelBufferProducer.swift; path = Source/PixelBufferProducers/PixelBufferProducer.swift; sourceTree = "<group>"; };
+		15696FD1612CCE40D1CDF6E34447B0BF /* Pods-Swiping Game 02.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swiping Game 02.release.xcconfig"; sourceTree = "<group>"; };
+		1C9B379FFF81D057501D88AB181B864A /* InternalRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InternalRecorder.swift; path = Source/InternalRecorder/InternalRecorder.swift; sourceTree = "<group>"; };
+		2DC7F98D1448C237EB6FF96223000C01 /* API.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = API.swift; path = Source/InternalRecorder/API.swift; sourceTree = "<group>"; };
+		2DCB9013EB20AEDF6A1E1C00741EDA82 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/AVKit.framework; sourceTree = DEVELOPER_DIR; };
+		2F5DDB69CE9CDAC85519AB53EB2CEB0A /* Pods-Swiping Game 02-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Swiping Game 02-acknowledgements.plist"; sourceTree = "<group>"; };
+		311DF659EFA9C2C39F78EFBB826FEC0B /* EAGLPixelBufferProducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EAGLPixelBufferProducer.swift; path = Source/PixelBufferProducers/EAGLPixelBufferProducer.swift; sourceTree = "<group>"; };
+		3A5DF71973579729896E17096D816290 /* SCNRecorder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCNRecorder-umbrella.h"; sourceTree = "<group>"; };
+		3ED873DE2BE4048EBDD443AA596FBE51 /* Recorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Recorder.swift; path = Source/Recorder.swift; sourceTree = "<group>"; };
+		427B5BC45803BCA6632FB77308DCC9FA /* GeometryFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeometryFilter.swift; path = Source/Filter/GeometryFilter.swift; sourceTree = "<group>"; };
+		43BDADB4824D958A9DFE33269F3064FF /* SCNRecorder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCNRecorder-dummy.m"; sourceTree = "<group>"; };
+		4F493B37D7CA54E5F1073C088322275D /* CIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CIImage.swift; path = Source/Extensions/CIImage.swift; sourceTree = "<group>"; };
+		535D04C5303981BA64909CAF602C1EA0 /* VideoRecording.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoRecording.swift; path = Source/VideoRecording.swift; sourceTree = "<group>"; };
+		5784C66742D73B71405F41D8D20FA8F0 /* WatermarkFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WatermarkFilter.swift; path = Source/Filter/WatermarkFilter.swift; sourceTree = "<group>"; };
+		61D4E3EEA4B96B42CF0340A101245BE4 /* Pods-Swiping Game 02.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Swiping Game 02.modulemap"; sourceTree = "<group>"; };
+		672AE1EED2D71A70AEB171F633CFB384 /* SCNRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCNRecorder.swift; path = Source/SCNRecorder.swift; sourceTree = "<group>"; };
+		6C4F503F1AB7190A981161577E8B8E97 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70658347E3FC53840C1B10A0AA5AA9F3 /* VideoRecorder.Recording.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoRecorder.Recording.swift; path = Source/Consumers/Video/VideoRecorder.Recording.swift; sourceTree = "<group>"; };
+		7264926AC1458DD4ED66C392569BF23D /* Pods-Swiping Game 02-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swiping Game 02-resources.sh"; sourceTree = "<group>"; };
+		753BC7DF014A2A20BD844A6746CD5346 /* Weak.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Weak.swift; path = Source/Helpers/Weak.swift; sourceTree = "<group>"; };
+		75BBCE06BA9A7AC78EBAE741214D5B6D /* RecordableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordableView.swift; path = Source/Recordable/RecordableView.swift; sourceTree = "<group>"; };
+		761AB6992456B8301B0DA59C200BA0F7 /* CAMetalRecordableLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CAMetalRecordableLayer.swift; path = Source/Recordable/CAMetalRecordableLayer.swift; sourceTree = "<group>"; };
+		771A796D5572366CF8CE24FD66B03106 /* SCNRecordableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCNRecordableView.swift; path = Source/Recordable/SCNRecordableView.swift; sourceTree = "<group>"; };
+		7EB6B6959399529DA2A62FCA4A377A3F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		8F4CFE84FCC7823BE7F4E52CFC9396AC /* VideoInfoProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoInfoProvider.swift; path = Source/Consumers/Video/VideoInfoProvider.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		972EB8CA601AD71982EF6D4DB93AA269 /* CompositeFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompositeFilter.swift; path = Source/Filter/CompositeFilter.swift; sourceTree = "<group>"; };
+		A4E0AF6DD3673E17FD7AF7F4919E98C8 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/SceneKit.framework; sourceTree = DEVELOPER_DIR; };
+		A8167C8CBD231C03BE22AA8F67408085 /* SCNRecorder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SCNRecorder.modulemap; sourceTree = "<group>"; };
+		AC4AB701D7BBD33A051BF49110E2F607 /* ImageRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageRecorder.swift; path = Source/Consumers/Image/ImageRecorder.swift; sourceTree = "<group>"; };
+		B451CE41491261BDF8DBD0ECDD643EA0 /* VideoRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoRecorder.swift; path = Source/Consumers/Video/VideoRecorder.swift; sourceTree = "<group>"; };
+		BA27C76DF4E789C001C60A0782BA05B8 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Source/Filter/Filter.swift; sourceTree = "<group>"; };
+		BD722E896D0AAA67E011056813B3BABA /* ARSCNRecordableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ARSCNRecordableView.swift; path = Source/Recordable/ARSCNRecordableView.swift; sourceTree = "<group>"; };
+		C29873A6B85CF32D099B20B51B15A4DD /* Pods-Swiping Game 02.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swiping Game 02.debug.xcconfig"; sourceTree = "<group>"; };
+		C65FEA51A429DA3DA2BE7A22281ED666 /* MetalPixelBufferProducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetalPixelBufferProducer.swift; path = Source/PixelBufferProducers/MetalPixelBufferProducer.swift; sourceTree = "<group>"; };
+		C7983B83EF8C8D28ECAF193E50459913 /* SwappingFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwappingFilter.swift; path = Source/Filter/SwappingFilter.swift; sourceTree = "<group>"; };
+		CC4EC708C0B0704EE89573A1D6884995 /* SCNRecorder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCNRecorder.xcconfig; sourceTree = "<group>"; };
+		CD84AD9FED13BA6CC63DEE596448F26D /* MTLPixelFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MTLPixelFormat.swift; path = Source/Extensions/MTLPixelFormat.swift; sourceTree = "<group>"; };
+		D3828BEC154393B1A4BC62B310366DF9 /* Pods-Swiping Game 02-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Swiping Game 02-umbrella.h"; sourceTree = "<group>"; };
+		D799AC9458D562F33A6157ABE66D1DA0 /* AudioSampleBufferConsumer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioSampleBufferConsumer.swift; path = Source/Consumers/AudioSampleBufferConsumer.swift; sourceTree = "<group>"; };
+		DA7E096D8B8A1EEC578377688B6E63E0 /* SCNRecorder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCNRecorder.framework; path = SCNRecorder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC07A2E9AFCD0A4DC0DF6A85A25B4D43 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DDC3F8380F263529D58D70B6D6B8EF64 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/ARKit.framework; sourceTree = DEVELOPER_DIR; };
+		E0964978B9B3875131719459041E6EFC /* Pods_Swiping_Game_02.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Swiping_Game_02.framework; path = "Pods-Swiping Game 02.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1945121240A9164781476BE6BC06CF5 /* Pods-Swiping Game 02-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swiping Game 02-frameworks.sh"; sourceTree = "<group>"; };
+		E1E0D164F456CD92CABAE7D424A680C6 /* Pods-Swiping Game 02-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Swiping Game 02-dummy.m"; sourceTree = "<group>"; };
+		E9B29FB1D34D109A1374D5C61A31844D /* Pods-Swiping Game 02-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Swiping Game 02-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ED1127E9B007431BB28E81F380F97DE2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5962C1CAF84C23382BBA003ED9F06F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01C9E8857D9EB018F24CE8AF6C1553C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E58D020762A57163F0232DDA57EFB17E /* ARKit.framework in Frameworks */,
+				94872B5DD92A4D94D4720466BFABCB4A /* AVFoundation.framework in Frameworks */,
+				F52B3459008C74A6C90D12E9D2AB50F9 /* AVKit.framework in Frameworks */,
+				D0312C6D936564D81A80F8353A6B1083 /* Foundation.framework in Frameworks */,
+				9CE8F2E32D348BED7A01F7F70808DABD /* SceneKit.framework in Frameworks */,
+				EE51132820C6853BF910287775D8D4E2 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20B76940B93B1DF515D3A05788483009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9001D4CA61AAF5E1E2062FCAF5B97A69 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3D690AA618C4FE02D83B7C27D84B599 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C0BE7DA5F69CBA64B775884B3DD80A0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A83F2272A8E6CAF418D9CEBF6A505C08 /* Pods-Swiping Game 02 */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		54718E523720C5A7E165F9151329A65D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0964978B9B3875131719459041E6EFC /* Pods_Swiping_Game_02.framework */,
+				DA7E096D8B8A1EEC578377688B6E63E0 /* SCNRecorder.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */,
+				BE2E74387F5DF001D107761942C61EC0 /* Pods */,
+				54718E523720C5A7E165F9151329A65D /* Products */,
+				1C0BE7DA5F69CBA64B775884B3DD80A0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A3D690AA618C4FE02D83B7C27D84B599 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DDC3F8380F263529D58D70B6D6B8EF64 /* ARKit.framework */,
+				7EB6B6959399529DA2A62FCA4A377A3F /* AVFoundation.framework */,
+				2DCB9013EB20AEDF6A1E1C00741EDA82 /* AVKit.framework */,
+				F5962C1CAF84C23382BBA003ED9F06F1 /* Foundation.framework */,
+				A4E0AF6DD3673E17FD7AF7F4919E98C8 /* SceneKit.framework */,
+				DC07A2E9AFCD0A4DC0DF6A85A25B4D43 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A83F2272A8E6CAF418D9CEBF6A505C08 /* Pods-Swiping Game 02 */ = {
+			isa = PBXGroup;
+			children = (
+				ED1127E9B007431BB28E81F380F97DE2 /* Info.plist */,
+				61D4E3EEA4B96B42CF0340A101245BE4 /* Pods-Swiping Game 02.modulemap */,
+				E9B29FB1D34D109A1374D5C61A31844D /* Pods-Swiping Game 02-acknowledgements.markdown */,
+				2F5DDB69CE9CDAC85519AB53EB2CEB0A /* Pods-Swiping Game 02-acknowledgements.plist */,
+				E1E0D164F456CD92CABAE7D424A680C6 /* Pods-Swiping Game 02-dummy.m */,
+				E1945121240A9164781476BE6BC06CF5 /* Pods-Swiping Game 02-frameworks.sh */,
+				7264926AC1458DD4ED66C392569BF23D /* Pods-Swiping Game 02-resources.sh */,
+				D3828BEC154393B1A4BC62B310366DF9 /* Pods-Swiping Game 02-umbrella.h */,
+				C29873A6B85CF32D099B20B51B15A4DD /* Pods-Swiping Game 02.debug.xcconfig */,
+				15696FD1612CCE40D1CDF6E34447B0BF /* Pods-Swiping Game 02.release.xcconfig */,
+			);
+			name = "Pods-Swiping Game 02";
+			path = "Target Support Files/Pods-Swiping Game 02";
+			sourceTree = "<group>";
+		};
+		BE2E74387F5DF001D107761942C61EC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB6F82459BCB4B00704D304E5097A0B6 /* SCNRecorder */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB6F82459BCB4B00704D304E5097A0B6 /* SCNRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				2DC7F98D1448C237EB6FF96223000C01 /* API.swift */,
+				BD722E896D0AAA67E011056813B3BABA /* ARSCNRecordableView.swift */,
+				D799AC9458D562F33A6157ABE66D1DA0 /* AudioSampleBufferConsumer.swift */,
+				095EC26F020184F2639A3B177A02A87D /* AVCaptureSession.swift */,
+				761AB6992456B8301B0DA59C200BA0F7 /* CAMetalRecordableLayer.swift */,
+				4F493B37D7CA54E5F1073C088322275D /* CIImage.swift */,
+				972EB8CA601AD71982EF6D4DB93AA269 /* CompositeFilter.swift */,
+				311DF659EFA9C2C39F78EFBB826FEC0B /* EAGLPixelBufferProducer.swift */,
+				BA27C76DF4E789C001C60A0782BA05B8 /* Filter.swift */,
+				427B5BC45803BCA6632FB77308DCC9FA /* GeometryFilter.swift */,
+				AC4AB701D7BBD33A051BF49110E2F607 /* ImageRecorder.swift */,
+				1C9B379FFF81D057501D88AB181B864A /* InternalRecorder.swift */,
+				C65FEA51A429DA3DA2BE7A22281ED666 /* MetalPixelBufferProducer.swift */,
+				CD84AD9FED13BA6CC63DEE596448F26D /* MTLPixelFormat.swift */,
+				021F83B385BE493F5BDB7A3B4A3172F3 /* PixelBufferConsumer.swift */,
+				0CDD62F9C579EB26E73D712AB00FF906 /* PixelBufferProducer.swift */,
+				75BBCE06BA9A7AC78EBAE741214D5B6D /* RecordableView.swift */,
+				3ED873DE2BE4048EBDD443AA596FBE51 /* Recorder.swift */,
+				771A796D5572366CF8CE24FD66B03106 /* SCNRecordableView.swift */,
+				672AE1EED2D71A70AEB171F633CFB384 /* SCNRecorder.swift */,
+				C7983B83EF8C8D28ECAF193E50459913 /* SwappingFilter.swift */,
+				8F4CFE84FCC7823BE7F4E52CFC9396AC /* VideoInfoProvider.swift */,
+				B451CE41491261BDF8DBD0ECDD643EA0 /* VideoRecorder.swift */,
+				70658347E3FC53840C1B10A0AA5AA9F3 /* VideoRecorder.Recording.swift */,
+				02B175FBF0C535F70B107B7251D41ABB /* VideoRecorder.State.swift */,
+				535D04C5303981BA64909CAF602C1EA0 /* VideoRecording.swift */,
+				5784C66742D73B71405F41D8D20FA8F0 /* WatermarkFilter.swift */,
+				753BC7DF014A2A20BD844A6746CD5346 /* Weak.swift */,
+				FC6532D3D7E775F9259C81D247CBFDB1 /* Support Files */,
+			);
+			name = SCNRecorder;
+			path = SCNRecorder;
+			sourceTree = "<group>";
+		};
+		FC6532D3D7E775F9259C81D247CBFDB1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C4F503F1AB7190A981161577E8B8E97 /* Info.plist */,
+				A8167C8CBD231C03BE22AA8F67408085 /* SCNRecorder.modulemap */,
+				CC4EC708C0B0704EE89573A1D6884995 /* SCNRecorder.xcconfig */,
+				43BDADB4824D958A9DFE33269F3064FF /* SCNRecorder-dummy.m */,
+				035AD2B45879F89E6DC2B740786A858F /* SCNRecorder-prefix.pch */,
+				3A5DF71973579729896E17096D816290 /* SCNRecorder-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SCNRecorder";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		855905CE104F999AFEB83DB068772F03 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C6FA87A43F10528BBEDC5325F1DF1B /* SCNRecorder-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CF2862F98F40849715D86AA4B6002AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C6ED68F372ADE7B95B6A383D6434018 /* Pods-Swiping Game 02-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0243262870B22AF768FEA856ACB03F24 /* SCNRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0C472D7654D2E1FF2477EFE62F6F41A /* Build configuration list for PBXNativeTarget "SCNRecorder" */;
+			buildPhases = (
+				855905CE104F999AFEB83DB068772F03 /* Headers */,
+				F87D887D944F066045A8001C389A8559 /* Sources */,
+				01C9E8857D9EB018F24CE8AF6C1553C3 /* Frameworks */,
+				0DA98074AFFFA9130B808ED685B27052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCNRecorder;
+			productName = SCNRecorder;
+			productReference = DA7E096D8B8A1EEC578377688B6E63E0 /* SCNRecorder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E6D16C27CAE0104F048D874C70D0D3EE /* Pods-Swiping Game 02 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ED4B9B43E9ADE8BB5334C003A22EB7D /* Build configuration list for PBXNativeTarget "Pods-Swiping Game 02" */;
+			buildPhases = (
+				8CF2862F98F40849715D86AA4B6002AC /* Headers */,
+				34A839770C7607FC61D69384F27E72B8 /* Sources */,
+				20B76940B93B1DF515D3A05788483009 /* Frameworks */,
+				992ED5C286F35CB24A0369BFE0D01E15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBA49F88ABDEB3AB19D8E081737C3236 /* PBXTargetDependency */,
+			);
+			name = "Pods-Swiping Game 02";
+			productName = "Pods-Swiping Game 02";
+			productReference = E0964978B9B3875131719459041E6EFC /* Pods_Swiping_Game_02.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 54718E523720C5A7E165F9151329A65D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6D16C27CAE0104F048D874C70D0D3EE /* Pods-Swiping Game 02 */,
+				0243262870B22AF768FEA856ACB03F24 /* SCNRecorder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DA98074AFFFA9130B808ED685B27052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992ED5C286F35CB24A0369BFE0D01E15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34A839770C7607FC61D69384F27E72B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AFC6575A26CB6BA2025D6774C8BCDD6 /* Pods-Swiping Game 02-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F87D887D944F066045A8001C389A8559 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77B6F961ED3F1BD22D1D1AB7269A2180 /* API.swift in Sources */,
+				965FFBB237CC808A48B1CD54EF66527D /* ARSCNRecordableView.swift in Sources */,
+				27EEE493245FECB4CE98AC2D3C381F35 /* AudioSampleBufferConsumer.swift in Sources */,
+				F755D400E6B968AF2A9459EB05F57193 /* AVCaptureSession.swift in Sources */,
+				B5C59638C3E30438CF0F137E23BFCE6E /* CAMetalRecordableLayer.swift in Sources */,
+				7D9A4099E60EBEE22FABF76893DD7360 /* CIImage.swift in Sources */,
+				BA32A3B00AA5F5E927A664AD85C02956 /* CompositeFilter.swift in Sources */,
+				98D55102454D9CEAB480BFFFB9D73E77 /* EAGLPixelBufferProducer.swift in Sources */,
+				1C24D0C87E2E38C9B616449C84EF4084 /* Filter.swift in Sources */,
+				393D7FF28E28EA8957C978B8420F2877 /* GeometryFilter.swift in Sources */,
+				6A0D2EFB2EC74B8E6493168CFF725BA4 /* ImageRecorder.swift in Sources */,
+				5C70CCAF5C57948AE1D2D489D5A8DE5E /* InternalRecorder.swift in Sources */,
+				BE816D290C19DC8655962C539DCAB978 /* MetalPixelBufferProducer.swift in Sources */,
+				5DF5B307E13F499E23B0A2A4C358FF0C /* MTLPixelFormat.swift in Sources */,
+				16CE6D2F57991F3B562AD6E999561AD2 /* PixelBufferConsumer.swift in Sources */,
+				33FB4FD92138F0B09B077955BD310DAE /* PixelBufferProducer.swift in Sources */,
+				2721D16B8279CBBEF213DC925F3426BD /* RecordableView.swift in Sources */,
+				ADAC449BD930A5B1D3922F4F576BE7DA /* Recorder.swift in Sources */,
+				9EC5276A980145E3634F91C1485CE28D /* SCNRecordableView.swift in Sources */,
+				565D2CB45DAE0079B0B295C1F90B02FF /* SCNRecorder-dummy.m in Sources */,
+				4D5D1F276784690DA5FB034DE0506CA9 /* SCNRecorder.swift in Sources */,
+				E0631D728111C5324C09BE1FF22CD136 /* SwappingFilter.swift in Sources */,
+				6906952B83C3DBF11ACF8F7F2A530A03 /* VideoInfoProvider.swift in Sources */,
+				9AD74FDAA6951B716AF687604A679BA8 /* VideoRecorder.Recording.swift in Sources */,
+				BD337A36BF3CA9FEFE83063572BBAB7E /* VideoRecorder.State.swift in Sources */,
+				8C9760B3F8C7E5B868712F1AA20E8A74 /* VideoRecorder.swift in Sources */,
+				E4E2149445C4E50B22891F4951DE5D0A /* VideoRecording.swift in Sources */,
+				A6534D2D9B24F5CBEDD1673DDA2BACEB /* WatermarkFilter.swift in Sources */,
+				5BD390F81C668927B21CC4A0C2C0CBEA /* Weak.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBA49F88ABDEB3AB19D8E081737C3236 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SCNRecorder;
+			target = 0243262870B22AF768FEA856ACB03F24 /* SCNRecorder */;
+			targetProxy = E94A259EE107F44FA4417DA02E600090 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		36077B0BEFDFFA37D73F81CFA080A197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC4EC708C0B0704EE89573A1D6884995 /* SCNRecorder.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SCNRecorder/SCNRecorder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCNRecorder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SCNRecorder/SCNRecorder.modulemap";
+				PRODUCT_MODULE_NAME = SCNRecorder;
+				PRODUCT_NAME = SCNRecorder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DFC9796FA9E6BCF680E1E0B1780DD0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AA82D53F8DCA8F52459CD510B36E51F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C29873A6B85CF32D099B20B51B15A4DD /* Pods-Swiping Game 02.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Swiping Game 02/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Swiping Game 02/Pods-Swiping Game 02.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B8C0B52BC1406F8EA38F45070EA32BA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15696FD1612CCE40D1CDF6E34447B0BF /* Pods-Swiping Game 02.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Swiping Game 02/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Swiping Game 02/Pods-Swiping Game 02.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E19471FE7E209D0818DAFB22D649A6E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FFB4DC2E76576F807D7ADCD4C2278F1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC4EC708C0B0704EE89573A1D6884995 /* SCNRecorder.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SCNRecorder/SCNRecorder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCNRecorder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SCNRecorder/SCNRecorder.modulemap";
+				PRODUCT_MODULE_NAME = SCNRecorder;
+				PRODUCT_NAME = SCNRecorder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E19471FE7E209D0818DAFB22D649A6E9 /* Debug */,
+				8DFC9796FA9E6BCF680E1E0B1780DD0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ED4B9B43E9ADE8BB5334C003A22EB7D /* Build configuration list for PBXNativeTarget "Pods-Swiping Game 02" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA82D53F8DCA8F52459CD510B36E51F7 /* Debug */,
+				B8C0B52BC1406F8EA38F45070EA32BA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0C472D7654D2E1FF2477EFE62F6F41A /* Build configuration list for PBXNativeTarget "SCNRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB4DC2E76576F807D7ADCD4C2278F1D /* Debug */,
+				36077B0BEFDFFA37D73F81CFA080A197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

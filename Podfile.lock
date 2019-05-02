@@ -1,0 +1,16 @@
+PODS:
+  - SCNRecorder (1.0.0)
+
+DEPENDENCIES:
+  - SCNRecorder (~> 1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SCNRecorder
+
+SPEC CHECKSUMS:
+  SCNRecorder: 6ad5b59e64fb31fa3ee3d3ede5e1db34bcd80b36
+
+PODFILE CHECKSUM: de32c1f9dd69ba501debb07930e86f2b3325af0a
+
+COCOAPODS: 1.5.3
