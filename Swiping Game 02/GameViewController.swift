@@ -12,6 +12,7 @@ class GameViewController: UIViewController
   
     
     //MARK:- Connections
+    
     @IBOutlet weak var topBoundry: UIView!
     @IBOutlet weak var bottomBoundry: UIView!
     @IBOutlet weak var stringObjectView: UIView!
@@ -24,7 +25,11 @@ class GameViewController: UIViewController
     
     var initialCenter = CGPoint()  // The initial center point of the view.
     let colorString = ["Green", "Blue", "Red","Yellow"]   //Colors we will be using, this name is misleading
-    let colors = [UIColor.green, UIColor.blue, UIColor.red, UIColor.yellow]
+ //   let colors = [UIColor.green, UIColor.blue, UIColor.red, UIColor.yellow]
+    let labelColorRed = [UIColor.green, UIColor.blue, UIColor.red, UIColor.yellow, UIColor.red, UIColor.red]
+    let labelColorBlue = [UIColor.green, UIColor.blue, UIColor.red, UIColor.yellow, UIColor.blue, UIColor.blue]
+    let labelColorGreen = [UIColor.green, UIColor.blue, UIColor.red, UIColor.yellow, UIColor.green, UIColor.green]
+    let labelColorYellow = [UIColor.green, UIColor.blue, UIColor.red, UIColor.yellow, UIColor.yellow, UIColor.yellow]
     var rightColor = false
     var timerTime : Int = 0
     var totalSwipes = 1000
@@ -113,7 +118,7 @@ class GameViewController: UIViewController
     
     func randomPosition(_ imageView : UIView)
     {
-        imageView.center = CGPoint(x: Double.random(in: 150...230), y: Double.random(in: 200...650))
+        imageView.center = CGPoint(x: Double.random(in: 170...240), y: Double.random(in: 100...650))
     }
     
     
@@ -123,29 +128,32 @@ class GameViewController: UIViewController
         //Assign a random text to the label
         givenLabel.text = givenArray.randomElement()!
     
-    //next line is for test
-    stringObjectLabel.textColor = colors.randomElement()
-    
-       // givenLabel.textColor = UIColor.blue
+    //next line is for test ; it works
+   // stringObjectLabel.textColor = colors.randomElement()
     
         //Assign a tag as per the color
     
-        if givenLabel.text == "Red"
-        {
-            stringObjectLabel.tag = 3
-        }
-        else if givenLabel.text == "Blue"
+    
+        if givenLabel.text == "Blue"
         {
             stringObjectLabel.tag = 1
+            stringObjectLabel.textColor = labelColorBlue.randomElement()
         }
+      
         else if  givenLabel.text == "Green"
         {
             stringObjectLabel.tag = 2
-
+            stringObjectLabel.textColor = labelColorGreen.randomElement()
+        }
+        else if givenLabel.text == "Red"
+        {
+            stringObjectLabel.tag = 3
+            stringObjectLabel.textColor = labelColorRed.randomElement()
         }
             else if givenLabel.text == "Yellow"
         {
             stringObjectLabel.tag = 4
+            stringObjectLabel.textColor = labelColorYellow.randomElement()
         }
   }
     
@@ -188,7 +196,7 @@ class GameViewController: UIViewController
                 completeSwipes()
             }
     }
-        else if (imageView.frame.maxX >= rightBoundry.frame.minX + 15)
+        else if (imageView.frame.maxX >= rightBoundry.frame.minX + 20)
         {
             if stringObjectLabel.tag == 4
             {
