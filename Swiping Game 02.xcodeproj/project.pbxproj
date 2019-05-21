@@ -13,6 +13,8 @@
 		251161FE220DFD6F004CCE45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 251161FD220DFD6F004CCE45 /* Assets.xcassets */; };
 		25116201220DFD6F004CCE45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251161FF220DFD6F004CCE45 /* LaunchScreen.storyboard */; };
 		2544330B22235FE300742B37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2544330A22235FE300742B37 /* Main.storyboard */; };
+		25FF1D8B227C913700951008 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FF1D8A227C913700951008 /* StartViewController.swift */; };
+		25FF1D8D227CD58000951008 /* bird-616803_960_720.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FF1D8C227CD58000951008 /* bird-616803_960_720.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		25116200220DFD6F004CCE45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25116202220DFD6F004CCE45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2544330A22235FE300742B37 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		25FF1D8A227C913700951008 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		25FF1D8C227CD58000951008 /* bird-616803_960_720.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bird-616803_960_720.png"; path = "../../../../../Desktop/bird-616803_960_720.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				251161F3220DFD6D004CCE45 /* AppDelegate.swift */,
 				2544330A22235FE300742B37 /* Main.storyboard */,
+				25FF1D8A227C913700951008 /* StartViewController.swift */,
 				251161F5220DFD6D004CCE45 /* ViewController.swift */,
 				251161FD220DFD6F004CCE45 /* Assets.xcassets */,
 				251161FF220DFD6F004CCE45 /* LaunchScreen.storyboard */,
 				25116202220DFD6F004CCE45 /* Info.plist */,
 				251161FA220DFD6D004CCE45 /* Swiping_Game_02.xcdatamodeld */,
+				25FF1D8C227CD58000951008 /* bird-616803_960_720.png */,
 			);
 			path = "Swiping Game 02";
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 			files = (
 				25116201220DFD6F004CCE45 /* LaunchScreen.storyboard in Resources */,
 				251161FE220DFD6F004CCE45 /* Assets.xcassets in Resources */,
+				25FF1D8D227CD58000951008 /* bird-616803_960_720.png in Resources */,
 				2544330B22235FE300742B37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				251161F6220DFD6D004CCE45 /* ViewController.swift in Sources */,
+				25FF1D8B227C913700951008 /* StartViewController.swift in Sources */,
 				251161F4220DFD6D004CCE45 /* AppDelegate.swift in Sources */,
 				251161FC220DFD6D004CCE45 /* Swiping_Game_02.xcdatamodeld in Sources */,
 			);

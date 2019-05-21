@@ -26,12 +26,30 @@ class ViewController: UIViewController
     var initialCenter = CGPoint()  // The initial center point of the view.
     let colorString = ["Green", "Blue", "Red","Yellow"]   //Colors we will be using
     var rightColor = false
+    var timerTime : Int = 0
+    var totalSwipes = 1000
+    var swipeCount = 0
     
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         labelRandomString(stringObjectLabel, colorString)
+        
+        if (timerTime != 0 && totalSwipes == 0)
+        {
+            time()
+        }
+        else if (timerTime == 0 && totalSwipes != 0)
+        {
+            completeSwipes()
+        }
+        else
+        {
+            alert("Alert", "Cant have value in both fields")
+            self.dismiss(animated: true, completion: nil)
+            
+        }
         
     }
 
@@ -121,42 +139,90 @@ class ViewController: UIViewController
     func checkColor(imageView : UIView)
     {
         rightColor = false
-        
         if (imageView.frame.minY  <= topBoundry.frame.maxY - 13)
         {
-            
             if stringObjectLabel.tag == 1
             {
                 rightColor = true
+                completeSwipes()
             }
         }
         else if (imageView.frame.maxY >= bottomBoundry.frame.minY + 10)
         {
             if stringObjectLabel.tag == 2
             {
-                
                 rightColor = true
+                completeSwipes()
             }        }
-        else if (imageView.frame.minX <= leftBoundry.frame.maxX - 10)
+        else if (imageView.frame.minX <= leftBoundry.frame.maxX )
         {
             if stringObjectLabel.tag == 3
             {
-                
                 rightColor = true
+                completeSwipes()
             }
-            
-        }
-        else if (imageView.frame.maxX >= rightBoundry.frame.minX + 10)
+    }
+        else if (imageView.frame.maxX >= rightBoundry.frame.minX + 15)
         {
             if stringObjectLabel.tag == 4
             {
-                
                 rightColor = true
+                completeSwipes()
             }
-            
         }
-        
-
     }
+    
+    
+    func time()
+    {
+        
+        let timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(timerTime), repeats: true, block: { timer in
+            
+            
+            
+            //            let alert = UIAlertController(title: "Awesome", message: "You've finished the session. Please hand back the device to the proctor", preferredStyle: .alert)
+            //
+            //            let endAction = UIAlertAction(title: "End", style: .default, handler: { UIAlertAction in
+            //
+            //            })
+            //            alert.addAction(endAction)
+            //            self.present(alert, animated: true, completion: nil)
+            
+            self.alert("End of Activity", "You may pass the phone to the proctor")
+            
+        //    self.dismiss(animated: true, completion: nil)
+            
+            
+        })
+    }
+    
+    func completeSwipes()
+    {
+        if swipeCount == totalSwipes
+        {
+            swipeCount = 0
+            self.alert("End of Activity", "You may pass the phone to the proctor")
+          //  self.dismiss(animated: true, completion: nil)
+        }
+        else
+        {
+            swipeCount += 1
+        }
+    }
+    
+    
+    func alert(_ givenTile : String, _ givenMessage : String)
+    {
+        let alert = UIAlertController(title: givenTile, message: givenMessage, preferredStyle: .alert)
+        
+        let alertAction = UIAlertAction(title: "OK", style: .default) { (UIAlertAction) in
+             self.dismiss(animated: true, completion: nil)
+        }
+        alert.addAction(alertAction)
+        
+        present(alert, animated: true, completion: nil)
+        
+    }
+    
 }
 
