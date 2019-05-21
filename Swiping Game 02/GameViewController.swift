@@ -1,6 +1,5 @@
 //
-//  ViewController.swift
-//  Swiping Game 02
+//  GameViewController.swift
 //
 //  Created by Mir Moazam Abass on 2/8/19.
 //  Copyright © 2019 Mir Moazam Abass. All rights reserved.
