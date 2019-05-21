@@ -3,7 +3,6 @@
 //
 //  Created by Mir Moazam Abass on 2/8/19.
 //  Copyright © 2019 Mir Moazam Abass. All rights reserved.
-//
 
 import UIKit
 
@@ -111,6 +110,23 @@ class GameViewController: UIViewController
             randomPosition(objectView)
         }
         
+        
+        // Allows smooth movement of stickers.
+//        if sender.state == .began || sender.state == .changed
+//        {
+//            let point = sender.location(in: objectView.superview)
+//            if let superview = objectView.superview
+//            {
+//                let restrictByPoint : CGFloat = 30.0
+//                let superBounds = CGRect(x: superview.bounds.origin.x + restrictByPoint, y: superview.bounds.origin.y + restrictByPoint, width: superview.bounds.size.width - 2*restrictByPoint, height: superview.bounds.size.height - 2*restrictByPoint)
+//                if (superBounds.contains(point))
+//                {
+//                    let translation = sender.translation(in: objectView.superview)
+//                    sender.view!.center = CGPoint(x: sender.view!.center.x + translation.x, y: sender.view!.center.y + translation.y)
+//                    sender.setTranslation(CGPoint.zero, in: objectView.superview)
+//                }
+//            }
+//        }
     }
     
 
@@ -251,5 +267,11 @@ class GameViewController: UIViewController
         
     }
     
+
+
+@objc func handlePan(_ panGesture: UIPanGestureRecognizer)
+{
+   
 }
 
+}
