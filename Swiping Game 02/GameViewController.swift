@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController
+class GameViewController: UIViewController
 {
   
     
@@ -24,7 +24,8 @@ class ViewController: UIViewController
     //MARK:- Variables
     
     var initialCenter = CGPoint()  // The initial center point of the view.
-    let colorString = ["Green", "Blue", "Red","Yellow"]   //Colors we will be using
+    let colorString = ["Green", "Blue", "Red","Yellow"]   //Colors we will be using, this name is misleading
+    let colors = [UIColor.green, UIColor.blue, UIColor.red, UIColor.yellow]
     var rightColor = false
     var timerTime : Int = 0
     var totalSwipes = 1000
@@ -35,8 +36,8 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
         labelRandomString(stringObjectLabel, colorString)
-        
-        if (timerTime != 0 && totalSwipes == 0)
+        print(timerTime)
+        if (timerTime > 0 )//&& totalSwipes == 0)
         {
             time()
         }
@@ -56,7 +57,9 @@ class ViewController: UIViewController
     
     @IBAction func panGesture(_ sender: UIPanGestureRecognizer)
     {
+        //Check for the sender to be not nil
         guard sender.view != nil else {return}
+        //naming sender.view objectView to make the referencing easier
         let objectView = sender.view!
         
         // Translation  -> Gets the changes in the X and Y directions relative to
@@ -75,11 +78,14 @@ class ViewController: UIViewController
         {
             let newCenter = CGPoint(x: initialCenter.x + translation.x, y: initialCenter.y + translation.y)
             objectView.center = newCenter
+           
+            // *---> find a better way for this; look into views and how they interact
             
             if objectView.frame.minY  <= topBoundry.frame.maxY - 13
                 || objectView.frame.maxY >= bottomBoundry.frame.minY + 10 || objectView.frame.minX <= leftBoundry.frame.maxX - 10 || objectView.frame.maxX >= rightBoundry.frame.minX + 10
             {
                 checkColor(imageView: sender.view!)
+                
                 if rightColor
                 {
                     randomPosition(objectView)
@@ -104,38 +110,59 @@ class ViewController: UIViewController
     }
     
 
+    // Assigns random position to the view
+    
     func randomPosition(_ imageView : UIView)
     {
         imageView.center = CGPoint(x: Double.random(in: 150...230), y: Double.random(in: 200...650))
     }
     
+    
+    
     func  labelRandomString(_ givenLabel : UILabel,_ givenArray: [String])
    {
-    givenLabel.text = givenArray.randomElement()!
-   // givenLabel.textColor = UIColor.blue
+        //Assign a random text to the label
+        givenLabel.text = givenArray.randomElement()!
     
-    if givenLabel.text == "Red"
-    {
-        stringObjectLabel.tag = 3
-    }
-    else if givenLabel.text == "Blue"
-    {
-        stringObjectLabel.tag = 1
+    //next line is for test
+    stringObjectLabel.textColor = colors.randomElement()
+    
+       // givenLabel.textColor = UIColor.blue
+    
+        //Assign a tag as per the color
+    
+        if givenLabel.text == "Red"
+        {
+            stringObjectLabel.tag = 3
+        }
+        else if givenLabel.text == "Blue"
+        {
+            stringObjectLabel.tag = 1
+        }
+        else if  givenLabel.text == "Green"
+        {
+            stringObjectLabel.tag = 2
 
-    }
-    else if  givenLabel.text == "Green"
-    {
-        stringObjectLabel.tag = 2
+        }
+            else if givenLabel.text == "Yellow"
+        {
+            stringObjectLabel.tag = 4
+        }
+  }
+    
+    
 
-    }
-        else if givenLabel.text == "Yellow"
-    {
-        stringObjectLabel.tag = 4
-
-    }
-  
-    }
-  
+    /*  MARK:- THE FUNCTION TO CHECK IF THE COLOR IS TAKEN TO THE RIGHT SIDE
+ 
+     Here I have four conditions to check if the word is taken to the right color
+     all conditions work the same way
+     1. first the if part checks what catefory the position of the frame falls in
+     
+     2. the second if checks the tag of the label. only if the tag is right the variable
+     rightColor is changed from false to true.
+     
+ */
+    
     func checkColor(imageView : UIView)
     {
         rightColor = false
@@ -172,29 +199,21 @@ class ViewController: UIViewController
         }
     }
     
+    //Timer Function;
+    //*---> Improve this by makig it take desired time as input
     
     func time()
     {
-        
-        let timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(timerTime), repeats: true, block: { timer in
-            
-            
-            
-            //            let alert = UIAlertController(title: "Awesome", message: "You've finished the session. Please hand back the device to the proctor", preferredStyle: .alert)
-            //
-            //            let endAction = UIAlertAction(title: "End", style: .default, handler: { UIAlertAction in
-            //
-            //            })
-            //            alert.addAction(endAction)
-            //            self.present(alert, animated: true, completion: nil)
-            
+        let timer = Timer.scheduledTimer(withTimeInterval: Double(timerTime), repeats: true, block: { timer in
+
             self.alert("End of Activity", "You may pass the phone to the proctor")
-            
-        //    self.dismiss(animated: true, completion: nil)
-            
             
         })
     }
+    
+    //Checks if the swipeCount(which starts at 0) has reached the desired value;
+    // if not then adds 1 to swipeCount
+    // if yes, make it zero and end activity
     
     func completeSwipes()
     {
@@ -210,6 +229,7 @@ class ViewController: UIViewController
         }
     }
     
+    //Alert Function
     
     func alert(_ givenTile : String, _ givenMessage : String)
     {

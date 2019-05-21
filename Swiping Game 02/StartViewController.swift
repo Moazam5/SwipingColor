@@ -4,7 +4,7 @@
 //
 //  Created by mozz on 5/2/19.
 //  Copyright © 2019 Mir Moazam Abass. All rights reserved.
-//this one
+//
 //
 
 import UIKit
@@ -24,14 +24,14 @@ class StartActivityViewController: UIViewController {
         if segue.identifier == "forTime"
         {
           
-                let destinationVC = segue.destination as! ViewController
+                let destinationVC = segue.destination as! GameViewController
                 destinationVC.timerTime = Int(timeTextField.text!)!
             }
         
             
         else if segue.identifier == "forSwipes"
         {
-                let destinationVC = segue.destination as! ViewController
+                let destinationVC = segue.destination as! GameViewController
                 destinationVC.totalSwipes = Int(swipeTextField.text!)!
             }
         
@@ -48,8 +48,11 @@ class StartActivityViewController: UIViewController {
                 else
                 {
                     performSegue(withIdentifier: "forTime", sender: self)
+                    timeTextField.text = ""
+
                 }
-            }else {return}
+            }
+            else {return}
         }
     
     @IBAction func swipesButton(_ sender: Any)
@@ -62,6 +65,8 @@ class StartActivityViewController: UIViewController {
         else
         {
             performSegue(withIdentifier: "forSwipes", sender: self)
+            swipeTextField.text = ""
+
         }
         }
         else {return}

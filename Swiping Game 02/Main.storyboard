@@ -104,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="-873.91304347826099" y="10.714285714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="Qxr-C8-pHA">
             <objects>
-                <viewController id="STM-Yf-kGe" customClass="ViewController" customModule="Swiping_Game_02" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="STM-Yf-kGe" customClass="GameViewController" customModule="Swiping_Game_02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6t5-nE-XfN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
