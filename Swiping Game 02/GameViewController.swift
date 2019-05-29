@@ -17,7 +17,6 @@ class GameViewController: UIViewController
     @IBOutlet weak var stringObjectView: UIView!
     @IBOutlet var leftBoundry: UIView!
     @IBOutlet var rightBoundry: UIView!
-    
     @IBOutlet weak var stringObjectLabel: UILabel!
     
     //MARK:- Variables
